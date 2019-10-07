@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PregonActivity"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshChecklist"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Random"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="1dp">
+
+        <TextView
+            android:id="@+id/fcompania"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="left"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=" - "-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="25sp"-->
+            <!--android:layout_gravity="left"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginBottom="10dp"/>-->
+
+        <TextView
+            android:id="@+id/fcodigopregon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="left"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha Limite: "
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/colorGrayText"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ffecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Objetivo: "
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/colorGrayText"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/fobjetivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pregón: "
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/colorGrayText"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/fpregon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Experiencia: "
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/colorGrayText"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/fexperiencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de pregón: "
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/colorGrayText"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/fevidencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Código para redimir: "
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/colorGrayText"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/fcodigoredime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beneficio por redimir código: "
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/colorGrayText"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/fbeneficio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recompensas: "
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/colorGrayText"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fpago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Material de Apoyo"
+                android:textSize="20sp"
+                android:layout_gravity="left"
+                android:textColor="@color/colorGrayText"
+                android:textStyle="bold"
+                android:layout_marginBottom="25dp"
+                android:onClick="downloadSupportMaterial"/>
+
+
+            <Button
+                android:id="@+id/upAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Cuéntanos tu experiencia"
+                android:textColor="@android:color/background_light"
+                android:layout_marginBottom="13dp"/>
+
+
+
+
+            <!--<Button-->
+                <!--android:id="@+id/up_checklist"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:text="Subir persona"-->
+                <!--android:textColor="@android:color/background_light"-->
+                <!--android:layout_marginBottom="13dp"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/asd"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:text="Volver al menu"-->
+                <!--android:onClick="goToMenu"-->
+                <!--android:textColor="@android:color/background_light" />-->
+
+            <!--<android.support.design.widget.FloatingActionButton-->
+                <!--android:id="@+id/fab"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="bottom|end"-->
+                <!--android:layout_margin="@dimen/fab_margin"-->
+                <!--app:srcCompat="@android:drawable/ic_dialog_email"-->
+                <!--/>-->
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

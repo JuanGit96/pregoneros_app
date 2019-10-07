@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pregoneros</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_abmenu">ABMenu</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_en_cnstruccion">EnCnstruccionActivity</string>
+    <string name="title_activity_basic">BasicActivity</string>
+</resources>

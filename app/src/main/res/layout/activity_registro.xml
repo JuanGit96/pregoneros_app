@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registro"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:background="@color/colorAccent"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regístro de pregonero"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@android:color/background_light"
+                android:theme="@style/CampoTextoBlanco" />
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:backgroundTint="@android:color/background_light"
+                android:textColorHint="@android:color/background_light"
+                android:theme="@style/CampoTextoBlanco"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/user_lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido"
+                android:inputType="text"
+                android:backgroundTint="@android:color/background_light"
+                android:textColorHint="@android:color/background_light"
+                android:theme="@style/CampoTextoBlanco"
+                android:textColor="@android:color/white"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/user_birthdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Fecha de nacimiento"
+                    android:inputType="datetime"
+                    android:backgroundTint="@android:color/background_light"
+                    android:textColorHint="@android:color/background_light"
+                    android:theme="@style/CampoTextoBlanco"
+                    android:textColor="@android:color/white"
+                    android:clickable="true"/>
+
+                <Button
+                    android:id="@+id/user_birthdate_btn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ic_date_range_black_24dp"
+                    android:layout_marginLeft="15dp"/>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefono celular"
+                android:inputType="number"
+                android:backgroundTint="@android:color/background_light"
+                android:textColorHint="@android:color/background_light"
+                android:theme="@style/CampoTextoBlanco"
+                android:textColor="@android:color/white"/>
+
+
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo electronico"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="@android:color/background_light"
+                android:textColorHint="@android:color/background_light"
+                android:theme="@style/CampoTextoBlanco"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/user_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:backgroundTint="@android:color/background_light"
+                android:textColorHint="@android:color/background_light"
+                android:theme="@style/CampoTextoBlanco"
+                android:textColor="@android:color/white"/>
+
+
+            <EditText
+                android:id="@+id/user_confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirma Contraseña"
+                android:inputType="textPassword"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/background_light"
+                android:textColorHint="@android:color/background_light"
+                android:theme="@style/CampoTextoBlanco"
+                android:textColor="@android:color/white"/>
+
+            <RadioGroup
+                android:id="@+id/radioGrup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ratio_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Acepto terminos y condiciones"
+                    android:textColor="@android:color/background_light"
+                    android:buttonTint="@android:color/background_light"/>
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/user_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¡Regístrate!"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_goTo_loginPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Ya tienes cuenta? \n     ¡Ingresa aquí!"
+                android:layout_gravity="center"
+                android:textColor="@android:color/background_light"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lee nestros terminos y condiciones dando click aqui"
+                    android:onClick="viewTerms"
+                    android:textColor="@android:color/background_light"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

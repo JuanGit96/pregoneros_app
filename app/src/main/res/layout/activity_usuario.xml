@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Usuario"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a Pregoneros"
+        android:layout_gravity="center"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/welcomeUser_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:text="-Gana dinero hablando sobre marcas de tu
+preferencia a tu familia y amigos.\n\n
+-Ni tus allegados ni tu, necesitan comprar
+algo.\n\n
+-Con el hecho de que hables de la marca,
+ya ganas dinero.\n\n
+-No requieres de tiempo exclusivo para
+trabajar como pregonero.\n\n
+-Puedes hablar de las marcas en tu casa,
+trabajo, o donde sea que te encuentres.\n\n
+-Sé el primero enterarte de nuevos
+productos y descuentos."
+        android:textStyle="italic"
+        android:textSize="17sp"
+        />
+
+
+    <Button
+        android:id="@+id/tv_goTo_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToMenu"
+        android:text="CONTINUAR"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/background_light" />
+
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Faq"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayuda"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="39dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:background="@color/colorAccent"
+            android:text="Tutorial"
+            android:textColor="@android:color/background_light"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/tutorialClick">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:background="@color/colorAccent"
+            android:text="Video Tutorial"
+            android:textColor="@android:color/background_light"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/videoTutorialClick">
+        </Button>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="271dp">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginBottom="20dp">-->
+
+
+
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingBottom="15dp"-->
+                <!--android:paddingTop="15dp"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:text="¿Cómo registrar el pregón?"-->
+                <!--android:textColor="@android:color/background_light"-->
+                <!--android:layout_marginBottom="15dp">-->
+            <!--</Button>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingBottom="15dp"-->
+                <!--android:paddingTop="15dp"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:text="¿Cómo llenar el checklist?"-->
+                <!--android:textColor="@android:color/background_light"-->
+                <!--android:layout_marginBottom="15dp">-->
+            <!--</Button>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingBottom="15dp"-->
+                <!--android:paddingTop="15dp"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:text="¿Cómo solicitar el pago del dia?"-->
+                <!--android:textColor="@android:color/background_light"-->
+                <!--android:layout_gravity="bottom|end"-->
+                <!--android:layout_marginBottom="15dp">-->
+            <!--</Button>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingBottom="15dp"-->
+                <!--android:paddingTop="15dp"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:text="¿Cómo solicitar el pago del dia?"-->
+                <!--android:textColor="@android:color/background_light"-->
+                <!--android:layout_gravity="bottom|end"-->
+                <!--android:layout_marginBottom="15dp">-->
+            <!--</Button>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingBottom="15dp"-->
+                <!--android:paddingTop="15dp"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:text="¿Cómo solicitar el pago del dia?"-->
+                <!--android:textColor="@android:color/background_light"-->
+                <!--android:layout_gravity="bottom|end"-->
+                <!--android:layout_marginBottom="15dp">-->
+            <!--</Button>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingBottom="15dp"-->
+                <!--android:paddingTop="15dp"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:text="¿Cómo solicitar el pago del dia?"-->
+                <!--android:textColor="@android:color/background_light"-->
+                <!--android:layout_gravity="bottom|end"-->
+                <!--android:layout_marginBottom="15dp">-->
+            <!--</Button>-->
+
+
+        <!--</LinearLayout>-->
+
+    </ScrollView>
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingBottom="15dp"-->
+        <!--android:paddingTop="15dp"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--android:text="Volver al menú"-->
+        <!--android:textColor="@android:color/background_light"-->
+        <!--android:layout_marginBottom="15dp"-->
+        <!--android:layout_marginTop="80dp"-->
+        <!--android:onClick="goToMenu">-->
+    <!--</Button>-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:srcCompat="@android:drawable/ic_dialog_email"-->
+        <!--/>-->
+
+
+
+</LinearLayout>

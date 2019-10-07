@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="sexo_spinner" >
+        <item>Sin seleccionar</item>
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="intereses_spinner" >
+        <item>Sin seleccionar</item>
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="pregonType_spinner" >
+        <item>Sin seleccionar</item>
+        <item>Online</item>
+        <item>Presencial</item>
+    </string-array>
+
+    <string-array name="dedonde_spinner" >
+        <item>Sin seleccionar</item>
+        <item>Familiar que vive conmigo</item>
+        <item>Familiar que no vive conmigo</item>
+        <item>Amigo cercano</item>
+        <item>Compañero de trabajo</item>
+        <item>Compañero de universidad</item>
+        <item>Primera vez que hablo con esta persona</item>
+        <item>Otro</item>
+    </string-array>
+
+
+</resources>

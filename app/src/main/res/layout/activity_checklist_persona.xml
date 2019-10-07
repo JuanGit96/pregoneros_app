@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChecklistPersona"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subir pregón"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/name_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25sp"
+        android:layout_gravity="left"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="25sp"/>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A continuación registra la información del
+pregoneado al cual le diste el pregón."
+        android:textSize="14sp"
+        android:layout_gravity="left"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="25sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/TViewPregonType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de pregon: "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerPregonType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TViewNombreApellido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre y apellido *: "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TViewTelCelular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Celular: *"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/cellphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TViewEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correo electronico: *"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/TViewEdad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edad: "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/TViewSexo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sexo: "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinnerSexo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/TViewDeDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿De donde lo conoces?: "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerDeDonde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/TViewInteresado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Se mostró interesado?: "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerInteres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TViewPorque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Por Que?: "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/interestWhy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TViewComentarios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comentarios: "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:id="@+id/multimediaAudio">
+
+                    <Button
+                        android:id="@+id/addAudio"
+                        android:onClick="uploadAudio1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:text="Audio"
+                        android:textColor="@android:color/background_light" />
+
+                    <Button
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/audioDefault"
+                        android:layout_width="157dp"
+                        android:layout_height="123dp"
+                        android:onClick="actionAudio1"
+                        android:background="@drawable/mute" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/multimediaImagen"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <Button
+                        android:id="@+id/addImage"
+                        android:onClick="uploadImageDefault"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:text="Imagen"
+                        android:textColor="@android:color/background_light" />
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/imageDefault"
+                        android:layout_width="157dp"
+                        android:layout_height="123dp"
+                        android:src="@drawable/imagen_no_disponible" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/multimediaVideo">
+
+                    <Button
+                        android:id="@+id/addVideo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:text="Video"
+                        android:onClick="uploadVideoDefault"
+                        android:textColor="@android:color/background_light" />
+
+                    <VideoView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/videoDefault"
+                        android:layout_width="157dp"
+                        android:layout_height="123dp"
+                        android:src="@drawable/imagen_no_disponible" />
+
+                </LinearLayout>
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="160dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_marginLeft="10dp">-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/addAudio2"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@color/colorAccent"-->
+                        <!--android:text="Audio 2"-->
+                        <!--android:onClick="uploadAudio2"-->
+                        <!--android:textColor="@android:color/background_light" />-->
+
+                    <!--<Button-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:id="@+id/audio2Default"-->
+                        <!--android:layout_width="157dp"-->
+                        <!--android:layout_height="123dp"-->
+                        <!--android:onClick="actionAudio2"-->
+                        <!--android:background="@drawable/mute" />-->
+
+                <!--</LinearLayout>-->
+
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/multimediaImagen"-->
+                    <!--android:layout_width="160dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/addImage"-->
+                        <!--android:onClick="uploadImageDefault"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@color/colorAccent"-->
+                        <!--android:text="Imagen"-->
+                        <!--android:textColor="@android:color/background_light" />-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:id="@+id/imageDefault"-->
+                        <!--android:layout_width="157dp"-->
+                        <!--android:layout_height="123dp"-->
+                        <!--android:src="@drawable/imagen_no_disponible" />-->
+
+                <!--</LinearLayout>-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="160dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:id="@+id/multimediaVideo">-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/addVideo"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@color/colorAccent"-->
+                        <!--android:text="Video"-->
+                        <!--android:onClick="uploadVideoDefault"-->
+                        <!--android:textColor="@android:color/background_light" />-->
+
+                    <!--<VideoView-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:id="@+id/videoDefault"-->
+                        <!--android:layout_width="157dp"-->
+                        <!--android:layout_height="123dp"-->
+                        <!--android:src="@drawable/imagen_no_disponible" />-->
+
+                <!--</LinearLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_enviarChecklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:text="Enviar"
+                    android:textColor="@android:color/background_light" />
+
+            </LinearLayout>
+
+            <!--<android.support.design.widget.FloatingActionButton-->
+                <!--android:id="@+id/fab"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="bottom|end"-->
+                <!--android:layout_margin="@dimen/fab_margin"-->
+                <!--app:srcCompat="@android:drawable/ic_dialog_email"-->
+                <!--/>-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
